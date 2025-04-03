@@ -14,42 +14,46 @@
 <nav><a href="index.html">Home</a>
     <a href="Profiles.html">Profiles</a>
 </nav>
-<div>
-        <img src="ruòxī.jpg">
-        <img src="priya.jpg">
-        <img src="aniyah.jpg">
-        <img src="lucy.jpg">
-        <img src="kaiara.jpg">
-    </div>
-    <main>
-    <h1>Student Profiles</h1>
 
-   <div1><p> Ruòxī
+    <main>
+<h1>Student Profiles</h1>
+
+   <p style="display:inline-flex;"> 
+    <img src="ruòxī.jpg">
+    Ruòxī
     Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:
     * Electric cars
     * Robotic arms
     * Sports training systems</p>
     
-   <p> Priya
+   <p style="display:inline-flex;">
+    <img src="priya.jpg">
+    Priya
     Priya loves working with people and visual systems. She’s worked on:
     * Facial recognition software
     * Self-driving systems
     * Animal classification apps</p>
     
-    <p>Aniyah
+    <p style="display:inline-flex;">
+     <img src="aniyah.jpg"> 
+     Aniyah
     Aniyah is a mathematician through-and-through. She’s worked on:
     * Algorithm classification
     * Prime number factorisation
     * Computer graphics</p>
     
-    <p>Lucy
+    <p style="display:inline-flex;">
+     <img src="lucy.jpg">   
+    Lucy
     Lucy loves data and getting everything organised. She’s worked on:
     * Course choice prediction systems
     * Student information systems
     * Long-term extracurricular trends</p>
     
     
-    <p>Kaiara
+    <p style="display:inline-flex;">
+     <img src="kaiara.jpg">   
+     Kaiara
     Kaiara is a driven entrepreneur and drives app development forward. She’s worked on:
     * Ecommerce systems
     * Payment handling software
@@ -62,10 +66,9 @@
     
     body {
         display: grid;
-        grid: "h h h n" auto  
-              "d . m ." auto 
-              "d . m ." auto
-              "f f f f" auto
+        grid: "h h n " auto  
+              ". m ." auto
+              "f f f" auto
             / auto auto auto;
     }
 
@@ -84,8 +87,11 @@ img{
     display: block;
   margin: auto;
   width: 5rem;
-    
+  background-color: #D13155;
+    grid-area: i;
  }
+
+ main{grid-area: m;}
 
      a {
         grid-area: n;
@@ -106,7 +112,7 @@ img{
             background-color: #B51638;
         }
 
-        main {grid-area: m;}
+        
 
         h1{ 
             font-family: "Playwrite US Trad", cursive;
@@ -120,6 +126,7 @@ img{
             font-style: normal;
             background-color: #D13155;
             color: white;
+            grid-area: p;
         }
         footer{grid-area: f;}
         </style>
