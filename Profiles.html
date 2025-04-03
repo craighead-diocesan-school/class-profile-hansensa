@@ -14,10 +14,17 @@
 <nav><a href="index.html">Home</a>
     <a href="Profiles.html">Profiles</a>
 </nav>
-<main>
+<div>
+        <img src="ruòxī.jpg">
+        <img src="priya.jpg">
+        <img src="aniyah.jpg">
+        <img src="lucy.jpg">
+        <img src="kaiara.jpg">
+    </div>
+    <main>
     <h1>Student Profiles</h1>
 
-   <p> Ruòxī
+   <div1><p> Ruòxī
     Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:
     * Electric cars
     * Robotic arms
@@ -47,7 +54,7 @@
     * Ecommerce systems
     * Payment handling software
     * Stock management apps</p>
-    </main>
+    </div1></main>
 
     <footer> <p> &copy; Samantha Hansen, Craighead Diocesan School, 2025</p></footer>
 
@@ -55,10 +62,10 @@
     
     body {
         display: grid;
-        grid: "h h n" auto 
-              ". m ." auto 
-              ". m ." auto 
-              "f f f" auto
+        grid: "h h h n" auto  
+              "d . m ." auto 
+              "d . m ." auto
+              "f f f f" auto
             / auto auto auto;
     }
 
@@ -73,11 +80,17 @@
         text-align: center;
     }
     
-    a {
+img{ 
+    display: block;
+  margin: auto;
+  width: 5rem;
+    
+ }
+
+     a {
         grid-area: n;
             font-family: "Playwrite US Trad", cursive;
             font-optical-sizing: auto;
-            font-weight: <weight>;
             font-style: normal;
             background-color: #D13155;
             text-decoration: none;
@@ -87,17 +100,17 @@
             padding-left: 0.5em;
             padding-right: 0.5em;
             }
+
         nav {
             grid-area: n;
             background-color: #B51638;
         }
-        
+
+        main {grid-area: m;}
+
         h1{ 
-            grid-area: ;
             font-family: "Playwrite US Trad", cursive;
             font-optical-sizing: auto;
-            font-weight: <weight>;
-            font-style: normal;
         
         }
 
