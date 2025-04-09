@@ -14,20 +14,21 @@
     </head>
     <Header>Our Class / Karaehe</Header>
     <nav>
-        
+
         <a href="index.html">Home</a>
         <a href="Profiles.html">Profiles</a>
     </nav>
     <main>
-    
-           <div> 
+
+        <div>
             <img src="school-inside.jpg">
             <img src="school-outside (1).jpg">
             <img src="electric-motor.jpg">
             <img src="students-working.jpg">
             <img src="robotic-arm.jpg">
-           </div> 
-          <p style="display:inline-flex;"> Our class of high-performing digital technology students likes to get stuck into any project that takes their
+        </div>
+        <p style="display:inline-flex;"> Our class of high-performing digital technology students likes to get stuck
+            into any project that takes their
             fancy.
             The girls are in their final year at secondary school and are all working on personal projects that interest
             them.
@@ -46,15 +47,12 @@
     </footer>
     <style>
         body {
-        display: grid;
-        grid: "h h n" auto 
-              ". m ." auto 
-              "f f f" auto
-            / auto auto auto;
-    }
-       
-       header {
-        grid-area: h;
+            display: grid;
+            grid: "h h n" auto ". m ." auto "f f f" auto / auto auto auto;
+        }
+
+        header {
+            grid-area: h;
             font-family: "Monsieur La Doulaise", cursive;
             font-weight: 400;
             font-style: normal;
@@ -73,31 +71,33 @@
             font-style: normal;
             background-color: #D13155;
             text-decoration: none;
-            color:white;
+            color: white;
             border: 1px solid #D13155;
             border-radius: 0.5em;
             padding-left: 0.5em;
             padding-right: 0.5em;
             border: 1px solid black;
             box-shadow: 2px 2px #4B102A;
-            
+
         }
 
-        a:hover{
-        color: white;
-        background: #B51638;
+        a:hover {
+            color: white;
+            background: #B51638;
         }
 
-main{grid-area: m;}
+        main {
+            grid-area: m;
+        }
 
-        nav{
+        nav {
             grid-area: n;
             background-color: #B51638;
             background-color: fixed;
             display: flex;
             align-items: center;
-            
-            
+
+
         }
 
         p {
@@ -107,19 +107,25 @@ main{grid-area: m;}
             font-style: normal;
             background-color: #D13155;
             color: white;
-            
+
         }
- img{display: column;
-  margin: auto;
-  width: 10rem;
-  background-color: #D13155;}
 
-  div{ justify-content: center;
-    justify-content: space-around;
-}
+        img {
+            display: column;
+            margin: auto;
+            width: 10rem;
+            background-color: #D13155;
+            margin-left: 5%;
+        }
+
+        div {
+            justify-content: center;
+            justify-content: space-around;
+        }
 
 
-        footer{grid-area: f;}
-       
-       </style>
+        footer {
+            grid-area: f;
+        }
+    </style>
 </body>

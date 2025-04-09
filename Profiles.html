@@ -18,57 +18,62 @@
     <main>
 <h1>Student Profiles</h1>
 
-   <p style="display:inline-flex;"> 
-    <img src="ruòxī.jpg">
-    Ruòxī
-    Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:
+<article>
+   <h2>Ruòxī</h2>
+    <p style="display:inline-flex;"> 
+        <img src="ruòxī.jpg">
+        Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:
     <ul>
         <li> Electric cars</li>
     <li> Robotic arms</li>
     <li> Sports training systems</li>
 </ul>
-</p>
+</p></article>
     
-   <p style="display:inline-flex;">
-    <img src="priya.jpg">
-    Priya
-    Priya loves working with people and visual systems. She’s worked on:
+<article>
+   <h2>Priya</h2>
+    <p style="display:inline-flex;">
+        <img src="priya.jpg">
+        Priya loves working with people and visual systems. She’s worked on:
     <ul>
     <li> Facial recognition software</li>
     <li> Self-driving systems</li>
     <li> Animal classification apps</li>
 </ul>
-</p>
+</p></article>
     
-    <p style="display:inline-flex;">
-     <img src="aniyah.jpg"> 
-     Aniyah
-    Aniyah is a mathematician through-and-through. She’s worked on:
+<article>
+    <h2> Aniyah</h2>
+    <p style="display:inline-flex;"><img src="aniyah.jpg"> 
+        Aniyah is a mathematician through-and-through. She’s worked on:
     <ul>
         <li>Algorithm classification</li>
     <li> Prime number factorisation</li>
     <li> Computer graphics</li>
     </ul>
-    </p>
+    </p></article>
     
-    <p style="display:inline-flex;">
-     <img src="lucy.jpg">   
-    Lucy
-    Lucy loves data and getting everything organised. She’s worked on:
+    <article>
+    <h2> Lucy</h2>
+    <p style="display:inline-flex;"> 
+        <img src="lucy.jpg"> 
+         Lucy loves data and getting everything organised. She’s worked on:
     <ul><li> Course choice prediction systems</li>
     <li> Student information systems</li>
     <li> Long-term extracurricular trends</li>
 </ul>
-</p>
+</p></article>
     
-    
+    <article>
+    <h2> Kaiara</h2> 
     <p style="display:inline-flex;">
-     <img src="kaiara.jpg">   
-     Kaiara
-    Kaiara is a driven entrepreneur and drives app development forward. She’s worked on:
-    <ul>* Ecommerce systems
-    * Payment handling software
-    * Stock management apps</ul></p>
+       <img src="kaiara.jpg">  
+       Kaiara is a driven entrepreneur and drives app development forward. She’s worked on:
+    <ul> <li> Ecommerce systems</li>
+    <li> Payment handling software</li>
+    <li> Stock management apps
+    </ul>
+</p></article>
     </main>
 
     <footer> <p> &copy; Samantha Hansen, Craighead Diocesan School, 2025</p></footer>
@@ -91,9 +96,9 @@
         background-color: #4B102A;
         font-size: 110;
         color: white;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
 img{ 
@@ -102,6 +107,7 @@ img{
   width: 5rem;
   background-color: #D13155;
     grid-area: i;
+    margin-left: 20px;
  }
 
  main{grid-area: m;}
@@ -132,6 +138,7 @@ img{
             background-color: #B51638;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
         
@@ -139,20 +146,50 @@ img{
         h1{ 
             font-family: "Playwrite US Trad", cursive;
             font-optical-sizing: auto;
-        
+            background-color: #D13155;
+            color: white;
+            text-shadow: 2px 2px #4B102A; 
+            font-size: 50;
+            box-shadow: 2px 2px #4B102A;
         }
 
-        p {
-            font-family: "Courgette", cursive;
+        article{
+            background-color: #D13155;
+            box-shadow: 2px 2px #771127;
+        } 
+
+        h2{font-family: "Courgette", cursive;
             font-weight: 400;
             font-style: normal;
-            background-color: #D13155;
             color: white;
             grid-area: p;
             display: flex;
             align-items: center;
-            }
+            margin: 4px;
+            margin-left: 20px;
+            text-shadow: 2px 2px #B51638;
+            font-size: 35;
 
+       }
+
+        ul{font-family: "Courgette", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            grid-area: p;
+            font-size: 15;
+        }
+        
+        p {
+            font-family: "Courgette", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            grid-area: p;
+            display: flex;
+            align-items: center;
+            font-size: 17; 
+            }
             
         footer{grid-area: f;}
         </style>
