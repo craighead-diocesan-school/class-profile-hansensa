@@ -12,18 +12,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     </head>
-    <Header>Our Class</Header>
-    <nav><a href="index.html">Home</a>
+    <Header>Our Class / Karaehe</Header>
+    <nav>
+        
+        <a href="index.html">Home</a>
         <a href="Profiles.html">Profiles</a>
     </nav>
     <main>
-        <p style="display:inline-flex;">
+    
+           <div> 
             <img src="school-inside.jpg">
             <img src="school-outside (1).jpg">
-            <img src="students-working.jpg">
             <img src="electric-motor.jpg">
+            <img src="students-working.jpg">
             <img src="robotic-arm.jpg">
-            Our class of high-performing digital technology students likes to get stuck into any project that takes their
+           </div> 
+          <p style="display:inline-flex;"> Our class of high-performing digital technology students likes to get stuck into any project that takes their
             fancy.
             The girls are in their final year at secondary school and are all working on personal projects that interest
             them.
@@ -45,7 +49,6 @@
         display: grid;
         grid: "h h n" auto 
               ". m ." auto 
-              ". m ." auto 
               "f f f" auto
             / auto auto auto;
     }
@@ -56,9 +59,11 @@
             font-weight: 400;
             font-style: normal;
             background-color: #4B102A;
-            font-size: 100;
+            font-size: 110;
             color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         a {
@@ -73,6 +78,14 @@
             border-radius: 0.5em;
             padding-left: 0.5em;
             padding-right: 0.5em;
+            border: 1px solid black;
+            box-shadow: 2px 2px #4B102A;
+            
+        }
+
+        a:hover{
+        color: white;
+        background: #B51638;
         }
 
 main{grid-area: m;}
@@ -80,6 +93,11 @@ main{grid-area: m;}
         nav{
             grid-area: n;
             background-color: #B51638;
+            background-color: fixed;
+            display: flex;
+            align-items: center;
+            
+            
         }
 
         p {
@@ -89,11 +107,17 @@ main{grid-area: m;}
             font-style: normal;
             background-color: #D13155;
             color: white;
+            
         }
  img{display: column;
   margin: auto;
-  width: 5rem;
+  width: 10rem;
   background-color: #D13155;}
+
+  div{ justify-content: center;
+    justify-content: space-around;
+}
+
 
         footer{grid-area: f;}
        

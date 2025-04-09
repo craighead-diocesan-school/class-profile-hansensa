@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
-<Header>Our Class / Kura</Header>
+<Header>Our Class / Karaehe</Header>
 <nav><a href="index.html">Home</a>
     <a href="Profiles.html">Profiles</a>
 </nav>
@@ -22,43 +22,54 @@
     <img src="ruòxī.jpg">
     Ruòxī
     Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:
-    * Electric cars
-    * Robotic arms
-    * Sports training systems</p>
+    <ul>
+        <li> Electric cars</li>
+    <li> Robotic arms</li>
+    <li> Sports training systems</li>
+</ul>
+</p>
     
    <p style="display:inline-flex;">
     <img src="priya.jpg">
     Priya
     Priya loves working with people and visual systems. She’s worked on:
-    * Facial recognition software
-    * Self-driving systems
-    * Animal classification apps</p>
+    <ul>
+    <li> Facial recognition software</li>
+    <li> Self-driving systems</li>
+    <li> Animal classification apps</li>
+</ul>
+</p>
     
     <p style="display:inline-flex;">
      <img src="aniyah.jpg"> 
      Aniyah
     Aniyah is a mathematician through-and-through. She’s worked on:
-    * Algorithm classification
-    * Prime number factorisation
-    * Computer graphics</p>
+    <ul>
+        <li>Algorithm classification</li>
+    <li> Prime number factorisation</li>
+    <li> Computer graphics</li>
+    </ul>
+    </p>
     
     <p style="display:inline-flex;">
      <img src="lucy.jpg">   
     Lucy
     Lucy loves data and getting everything organised. She’s worked on:
-    * Course choice prediction systems
-    * Student information systems
-    * Long-term extracurricular trends</p>
+    <ul><li> Course choice prediction systems</li>
+    <li> Student information systems</li>
+    <li> Long-term extracurricular trends</li>
+</ul>
+</p>
     
     
     <p style="display:inline-flex;">
      <img src="kaiara.jpg">   
      Kaiara
     Kaiara is a driven entrepreneur and drives app development forward. She’s worked on:
-    * Ecommerce systems
+    <ul>* Ecommerce systems
     * Payment handling software
-    * Stock management apps</p>
-    </div1></main>
+    * Stock management apps</ul></p>
+    </main>
 
     <footer> <p> &copy; Samantha Hansen, Craighead Diocesan School, 2025</p></footer>
 
@@ -80,7 +91,9 @@
         background-color: #4B102A;
         font-size: 110;
         color: white;
-        text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
     }
     
 img{ 
@@ -105,11 +118,20 @@ img{
             border-radius: 0.5em;
             padding-left: 0.5em;
             padding-right: 0.5em;
+            border: 1px solid black;
+            box-shadow: 2px 2px #4B102A;
             }
+
+    a:hover{
+        color: white;
+        background: #B51638;
+    }
 
         nav {
             grid-area: n;
             background-color: #B51638;
+            display: flex;
+            align-items: center;
         }
 
         
@@ -127,7 +149,11 @@ img{
             background-color: #D13155;
             color: white;
             grid-area: p;
-        }
+            display: flex;
+            align-items: center;
+            }
+
+            
         footer{grid-area: f;}
         </style>
 </body>
